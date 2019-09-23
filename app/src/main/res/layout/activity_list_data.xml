@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListData">
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="1"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:id="@+id/txtDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="test date" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:id="@+id/txtJudul"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="test judul" />
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:id="@+id/txtDeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="test deskripsi" />
+
+        </GridLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
